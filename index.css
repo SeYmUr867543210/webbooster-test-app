@@ -1,0 +1,115 @@
+.chairs {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 100px;
+}
+
+#chair {
+    width: 200px;
+    height: 350px;
+}
+
+.text {
+    width: 200px;
+    /* border: 1px solid black; */
+    margin-left: 200px;
+    color: #777777;
+}
+
+.price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.rubl {
+    font-family: 'PT Sans', serif;
+}
+
+.buy {
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    background: #F13C6E;
+    color: white;
+    line-height: 30px;
+}
+
+.buy:hover {
+    border: 3px solid black;
+    width: 160px;
+    height: 45px;
+    transition: .3s ease-in;
+}
+
+
+/* model window */
+
+@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
+.modal {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    /* 丶亠仆���亠仄 */
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.closed {
+    display: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
+}
+
+.modal .close-button {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 20px;
+    border: 0;
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+}
+
+.open-button {
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: lightgreen;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 21px;
+}
